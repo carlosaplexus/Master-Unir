@@ -1,0 +1,15 @@
+[Unit]
+Description=Node Express App
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/environment
+WorkingDirectory=/opt/app/backend
+ExecStart=/usr/bin/node /opt/app/backend/app.js
+Restart=always
+RestartSec=10
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target

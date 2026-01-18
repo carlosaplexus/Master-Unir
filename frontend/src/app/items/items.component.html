@@ -1,0 +1,30 @@
+<h1>CRUD Items (Angular)</h1>
+
+<h2>Lista de items</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td>{{ item._id }}</td>
+      <td>{{ item.name }}</td>
+      <td class="row-actions">
+        <button (click)="editItem(item)">Editar</button>
+        <button (click)="deleteItem(item._id!)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Crear nuevo item</h2>
+
+<input [(ngModel)]="newName" placeholder="Nombre" required>
+<button (click)="createItem()">Crear</button>
+
