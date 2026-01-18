@@ -12,9 +12,8 @@ export interface Item {
 })
 export class ItemsService {
 
-  //private API_URL = '/api/items';
-  private API_URL = 'http://localhost:3008/api/items';
-
+  //private API_URL = 'http://localhost:3008/api/items';
+  //private API_URL = 'http://mean-multicapa-balancer-991662869.us-east-1.elb.amazonaws.com/api/items';
 
   constructor(private http: HttpClient) {}
 
