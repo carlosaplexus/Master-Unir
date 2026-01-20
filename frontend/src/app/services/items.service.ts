@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { EnvService } from './env.service';
 
 export interface Item {
   _id?: string;
@@ -14,15 +13,10 @@ export interface Item {
 export class ItemsService {
 
   //private API_URL = '/api/items';
-  //private API_URL = 'http://mean-multicapa-balancer-991662869.us-east-1.elb.amazonaws.com/api/items';
-  private API_URL:string;
-  
-  constructor( 
-    private http: HttpClient, 
-    private env: EnvService) 
-  { 
-    this.API_URL = `${this.env.apiUrl}/items`; 
-  }
+  private API_URL = 'http://localhost:3008/api/items';
+
+
+  constructor(private http: HttpClient) {}
 
   getItems(): Observable<Item[]> {
     return this.http.get<Item[]>(this.API_URL);
