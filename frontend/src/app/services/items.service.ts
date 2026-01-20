@@ -12,8 +12,8 @@ export interface Item {
 })
 export class ItemsService {
 
-  //private API_URL = '/api/items';
-  private API_URL = 'http://localhost:3008/api/items';
+  private API_URL = '/api/items';
+  //private API_URL = 'http://localhost/api/items';
 
 
   constructor(private http: HttpClient) {}
