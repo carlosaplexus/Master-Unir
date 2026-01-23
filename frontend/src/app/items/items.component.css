@@ -1,6 +1,7 @@
+body { font-family: Arial; margin: 40px; }
 table { margin:0 auto; border-collapse: collapse; width: 500px; margin-bottom: 20px; }
-th, td { border: 1px solid #06086b; padding: 8px; }
-th { background: #eee; }
+th, td { border: 1px solid #ccc; padding: 8px; }
+th { color: #06086b;background: #eee; }
 input { padding: 6px; margin-right: 6px; }
 button { padding: 6px 12px; }
 .row-actions button { margin-right: 6px; }
