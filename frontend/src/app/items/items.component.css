@@ -1,4 +1,10 @@
-body { font-family: Arial; margin: 40px; }
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
 table { border-collapse: collapse; width: 500px; margin-bottom: 20px; }
 th, td { border: 1px solid #ccc; padding: 8px; }
 th { background: #eee; }
