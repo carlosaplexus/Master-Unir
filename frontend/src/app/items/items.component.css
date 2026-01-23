@@ -1,12 +1,5 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: #fff;
-    text-align: center;
-    padding: 50px;
-}
-table { border-collapse: collapse; width: 500px; margin-bottom: 20px; }
-th, td { border: 1px solid #ccc; padding: 8px; }
+table { margin:0 auto; border-collapse: collapse; width: 500px; margin-bottom: 20px; }
+th, td { border: 1px solid #06086b; padding: 8px; }
 th { background: #eee; }
 input { padding: 6px; margin-right: 6px; }
 button { padding: 6px 12px; }
